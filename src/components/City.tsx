@@ -13,7 +13,7 @@ const City: React.FC<{ city: ICity | null, isLoad: boolean }> = ({city}) => {
                           justifyContent={"space-around"}
                           padding={majorScale(2)}
                           elevation={3}>
-                        <Heading size={600}>Город : {city.name}</Heading>
+                        <Heading size={600}>City : {city.name}</Heading>
                         <Text size={500}>temp : {kelvinToCelsius(city.main.temp)}C</Text>
                         <Text size={500}>temp min
                             : {kelvinToCelsius(city.main.temp_min)}C to {kelvinToCelsius(city.main.temp_max)}C</Text>
